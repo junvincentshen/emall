@@ -20,6 +20,6 @@ public class OrderTimeOutCancelTask {
 
     @Scheduled(cron = "0/10 * * ? * ?")
     private void cancelTimeOutOrder() {
-        LOGGER.info("取消订单，并根据sku编号释放锁定库存。S");
+        LOGGER.info("取消订单，并根据sku编号释放锁定库存。");
     }
 }

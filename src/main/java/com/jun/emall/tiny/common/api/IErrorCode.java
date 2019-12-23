@@ -6,23 +6,10 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package com.jun.emall.tiny.service;
+package com.jun.emall.tiny.common.api;
 
-import com.jun.emall.tiny.mbg.model.PmsBrand;
+public interface IErrorCode {
+    long getCode();
 
-import java.util.List;
-
-public interface PmsBrandService {
-
-    List<PmsBrand> listAllBrand();
-
-    int createBrand(PmsBrand brand);
-
-    int updateBrand(Long id, PmsBrand brand);
-
-    int deleteBrand(Long id);
-
-    List<PmsBrand> listBrand(int pageNum, int pageSize);
-
-    PmsBrand getBrand(Long id);
+    String getMessage();
 }
