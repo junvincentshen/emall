@@ -25,6 +25,10 @@ spring:
     username: mall
     password: 12345678
     publisher-confirms: true
+  mongodb:
+    host: localhost # mongodb的连接地址
+    port: 27017 # mongodb的连接端口号
+    database: mall-port # mongodb的连接的数据库
 
 mybatis:
   mapper-locations:
